@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        }
+        .color{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: white;
+        }
+        #green:checked~.color{
+            background-color: green;
+        }
+        #red:checked~.color{
+            background-color: red;
+        }
+        #blue:checked~.color{
+            background-color: blue;
+        }
+        #pink:checked~.color{
+            background-color: pink;
+        }
+        #yellow:checked~.color{
+            background-color: yellow;
+        }
+        #skyblue:checked~.color{
+            background-color: skyblue;
+        }
+        #orange:checked~.color{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <input id="green" name="clr" type="radio">Green
+    <input id="red" name="clr" type="radio">Red
+    <input id="blue" name="clr" type="radio">Blue
+    <input id="pink" name="clr" type="radio">Pink
+    <input id="yellow" name="clr" type="radio">Yellow
+    <input id="skyblue" name="clr" type="radio">Skyblue
+    <input id="orange" name="clr" type="radio">Orange
+    <div class="color"></div>
+</body>
+</html>
